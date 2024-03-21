@@ -7,8 +7,11 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese_Brazil.UTF8");
-    printf("Calculadora de Torricelli\nInsira um \"x\" na variável que quiser descobrir.\n");
-
+    printf("*****************************\n");
+    printf("* Calculadora de Torricelli *\n");
+    printf("*****************************\n\n");
+    printf("Insira um \"x\" na variável que quiser descobrir.\n\n");
+    
     char *vf = malloc(10);
     char *vi = malloc(10);
     char *acel = malloc(10);
