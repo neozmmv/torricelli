@@ -55,21 +55,21 @@ int main(int argc, char *argv[])
     if(isalpha(argv[1][0]) != 0)
     {
         vfquad = sqrt(viquad + (acel * deltaS));
-        printf("Argv[1] inválido\n Velocidade Final: %.2f\n", vfquad);
+        printf("Velocidade Final: %.2f\n", vfquad);
         system("pause");
         return 2;
     }
     if(isalpha(argv[2][0]) != 0)
     {
         viquad = sqrt(vfquad - (acel * deltaS));
-        printf("Argv[2] inválido\n V0²: %.2f\n", viquad);
+        printf("V0²: %.2f\n", viquad);
         system("pause");
         return 3;
     }
     if(isalpha(argv[3][0]) != 0)
     {
         acel = (vfquad - viquad) / (2 * deltaS);
-        printf("Argv[3] inválido\n Aceleração: %.2f\n", acel);
+        printf("Aceleração: %.2f\n", acel);
         system("pause");
         return 4;
     }
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
     {
         //v² = v0² + 2a * delta(S)
         deltaS = (vfquad - viquad) / (acel);
-        printf("Argv[4] inválido\n Delta S: %.2f\n", deltaS);
+        printf("Delta S: %.2f\n", deltaS);
         system("pause");
         return 5;
     }
