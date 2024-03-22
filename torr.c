@@ -72,7 +72,7 @@ int main()
     if(isalpha(vi[0]) != 0)
     {
         vinicial = sqrt(vfinal - (acc * dS));
-        printf("Velocide inicial: %.2f\n", vinicial);
+        printf("Velocidade inicial: %.2f\n", vinicial);
         system("pause");
     }
     if(isalpha(acel[0]) != 0)
